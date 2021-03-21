@@ -2,7 +2,7 @@ from telegram import *
 from telegram.ext import *
 
 
-bot = Bot("<Your api>")
+bot = Bot("1732582692:AAGPn8dzCh2OLKtcUvFGcxGup4hLn8-tVp4")
 #print(bot.get_me())
 
 updater=Updater("1498479585:AAEBSVUjShyfUcXZvFuxkGtd4qjl44HLodI",use_context=True)
@@ -17,7 +17,7 @@ def function_1(update:Update,context:CallbackContext):
 		)
 
 
-start_value=CommandHandler('<command>',test_function)
+start_value=CommandHandler('/hello',test_function)
 
 dispatcher.add_handler(start_value)
 
@@ -26,7 +26,7 @@ def test_function1(update:Update,context:CallbackContext):
 	bot.send_message(
 
 		chat_id=update.effective_chat.id,
-		text="<text>",
+		text="<thello>",
 		)
 
 
